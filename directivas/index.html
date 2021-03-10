@@ -15,6 +15,18 @@
         <h1 v-if="conectado">Estás conectado</h1>
         <p v-if="edad>=18">Eres mayor de 18</p>
         <p v-else>No eres mayor de 18 años</p>
+        <hr>
+        <h2>Renderizado de listas</h2>
+        <!-- <p>{{lista}}</p> -->
+        <ul>
+            <li v-for="nombres in lista">{{nombres}}</li>
+        </ul>
+        <hr>
+        <ul>
+            <li v-for="personas in listaPersonas">
+                {{personas.nombre}}: {{personas.edad}}
+            </li>
+        </ul>
     </div>
 
 
