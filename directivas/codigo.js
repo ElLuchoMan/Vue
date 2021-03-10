@@ -1,6 +1,7 @@
 const app = new Vue({
     el: '#main',
     data: {
-        texto: ' '
+     conectado: true,
+     edad:15,
     }
-})
+});
